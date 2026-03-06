@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f5f6fa;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: #C6E6E3;</string>
+      </property>
+      <widget class="QFrame" name="Header">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>901</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F3A2BE;
+    border-bottom: 1px solid #dcdde1;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>20</y>
+          <width>761</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>61</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Poppins</family>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    /* Gunakan font yang lebih ramping tapi tegas */
+    font-family: &quot;Poppins&quot;, &quot;Montserrat&quot;, &quot;Segoe UI Semibold&quot;;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50; /* Sesuaikan dengan tema warnamu */
+    
+    /* Menambah jarak antar huruf agar tidak terlihat dempet/distorsi */
+    letter-spacing: 3px; 
+    
+    /* Memberi ruang di bawah teks sebelum menyentuh garis/elemen lain */
+    margin-bottom: 10px;
+    padding-top: 5px;
+}</string>
+        </property>
+        <property name="text">
+         <string>NEWS SCRAPPER</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="Sidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>103</width>
+         <height>451</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #81BFB7; 
+border: none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Gaya Standar */
+QPushButton {
+    background-color: #FFD3DD; /* Warna latar gelap */
+    color: F0F9F8;               /* Warna teks */
+    border-radius: 8px;         /* Membuat sudut melengkung */
+    padding: 10px;
+    font-size: 13px;
+    text-align: justify;           /* Teks di tengah agar rapi di sidebar */
+    padding-left: 15px;
+    border: none;
+}
+
+/* Gaya saat kursor menyentuh tombol (Hover) */
+QPushButton:hover {
+    background-color: #4e6a85;  /* Warna sedikit lebih terang */
+}
+
+/* Gaya saat tombol diklik */
+QPushButton:pressed {
+    background-color: #2c3e50;  /* Warna lebih gelap */
+}</string>
+          </property>
+          <property name="text">
+           <string>Dashboard</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="styleSheet">
+           <string notr="true">/* Gaya Standar */
+QPushButton {
+    background-color: #FFD3DD; /* Warna latar gelap */
+    color: F0F9F8;               /* Warna teks */
+    border-radius: 8px;         /* Membuat sudut melengkung */
+    padding: 10px;
+    font-size: 13px;
+    text-align: justify;           /* Teks di tengah agar rapi di sidebar */
+    padding-left: 15px;
+    border: none;
+}
+
+/* Gaya saat kursor menyentuh tombol (Hover) */
+QPushButton:hover {
+    background-color: #4e6a85;  /* Warna sedikit lebih terang */
+}
+
+/* Gaya saat tombol diklik */
+QPushButton:pressed {
+    background-color: #2c3e50;  /* Warna lebih gelap */
+}</string>
+          </property>
+          <property name="text">
+           <string>Scrap</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* Gaya Standar */
+QPushButton {
+    background-color: #FFD3DD; /* Warna latar gelap */
+    color: F0F9F8;               /* Warna teks */
+    border-radius: 8px;         /* Membuat sudut melengkung */
+    padding: 10px;
+    font-size: 13px;
+    text-align: justify;           /* Teks di tengah agar rapi di sidebar */
+    padding-left: 15px;
+    border: none;
+}
+
+/* Gaya saat kursor menyentuh tombol (Hover) */
+QPushButton:hover {
+    background-color: #4e6a85;  /* Warna sedikit lebih terang */
+}
+
+/* Gaya saat tombol diklik */
+QPushButton:pressed {
+    background-color: #2c3e50;  /* Warna lebih gelap */
+}</string>
+          </property>
+          <property name="text">
+           <string>About</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="top_container" native="true">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>110</y>
+         <width>751</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F0F9F8;</string>
+       </property>
+       <widget class="QFrame" name="frame_TotalArtikel">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>211</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #dcdde1;
+}
+QLabel {
+    border: none;
+    color: #2f3640;
+	font-size: 14px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Total Artikel</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_LastPortal">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>20</y>
+          <width>211</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #dcdde1;
+}
+QLabel {
+    border: none;
+    color: #2f3640;
+	font-size: 14px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Portal Terakhir di Scrape</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_LastTime">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>20</y>
+          <width>211</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #dcdde1;
+}
+QLabel {
+    border: none;
+    color: #2f3640;
+	font-size: 14px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Waktu Scrape Terakhir</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>320</y>
+         <width>751</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget {
+    background-color: #ffffff;
+    alternate-background-color: #f8f9fa; 
+    gridline-color: #dcdde1; /* Warna garis pembatas */
+    border: 1px solid #dcdde1;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Memastikan garis vertikal dan horizontal terlihat */
+QTableWidget::item {
+    border-bottom: 1px solid #dcdde1;
+    border-right: 1px solid #dcdde1;
+}
+
+/* Desain Header (Judul Kolom) */
+QHeaderView::section {
+    background-color: #FFD3DD; /* Hijau muda yang kamu pilih */
+    color: #2C3E50;           /* Ganti ke Abu Tua/Gelap agar teks terbaca */
+    padding: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-right: 1px solid #dcdde1; /* Garis vertikal di bagian header */
+    border-bottom: 2px solid #dcdde1;
+}
+
+/* Hilangkan garis biru saat sel diklik */
+QTableWidget::item:selected {
+    background-color: #E0F2F1;
+    color: #2C3E50;
+}</string>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>249</number>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Judul</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tanggal</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Website</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>280</y>
+         <width>251</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Poppins&quot;; /* Ganti dengan nama font unikmu */
+    font-size: 20px;
+    font-weight: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Recent Scraping Result</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>912</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
