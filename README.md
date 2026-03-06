@@ -1,6 +1,7 @@
 # Scraper Berita
 Kelompok A3:
 - PythonicHoshiyomi: Giza Jirndhara (251524010)
+- Verianoo : Rajbi Muhammad Nizar (251524027)
 
 ## First Setup 
 ```
