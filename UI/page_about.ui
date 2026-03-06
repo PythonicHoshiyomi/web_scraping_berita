@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>News Scrapper</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #C6E6E3;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>12</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>15</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>15</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>220</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-family:'Poppins';font-size:18px;font-weight:bold;background:transparent;color:#2c3e50;</string>
+          </property>
+          <property name="text">
+           <string>📰 News Scrapper</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbl_version">
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#F3A2BE;color:white;border-radius:8px;padding:2px 10px;font-size:11px;font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>v1.0.0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout">
+        <property name="spacing">
+         <number>8</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">font-size:13px;background:transparent;color:#2c3e50;</string>
+          </property>
+          <property name="text">
+           <string>Aplikasi desktop untuk scraping berita otomatis dari portal berita online. Dibangun sebagai tugas Pengembangan Perangkat Lunak Desktop dengan tampilan modern dan intuitif.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="feat1">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{background-color:#FDE8F0;border-radius:8px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <layout class="QHBoxLayout">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:16px;background:transparent;</string>
+               </property>
+               <property name="text">
+                <string>🔍</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:11px;font-weight:bold;color:#c0527a;background:transparent;</string>
+               </property>
+               <property name="text">
+                <string>Auto Scraping</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="feat2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{background-color:#FDE8F0;border-radius:8px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <layout class="QHBoxLayout">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:16px;background:transparent;</string>
+               </property>
+               <property name="text">
+                <string>📊</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:11px;font-weight:bold;color:#c0527a;background:transparent;</string>
+               </property>
+               <property name="text">
+                <string>Live Dashboard</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="feat3">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{background-color:#FDE8F0;border-radius:8px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <layout class="QHBoxLayout">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:16px;background:transparent;</string>
+               </property>
+               <property name="text">
+                <string>⚡</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:11px;font-weight:bold;color:#c0527a;background:transparent;</string>
+               </property>
+               <property name="text">
+                <string>Real-time Log</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="feat4">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{background-color:#FDE8F0;border-radius:8px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Shape::StyledPanel</enum>
+            </property>
+            <layout class="QHBoxLayout">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:16px;background:transparent;</string>
+               </property>
+               <property name="text">
+                <string>🛠️</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:11px;font-weight:bold;color:#c0527a;background:transparent;</string>
+               </property>
+               <property name="text">
+                <string>Multi Portal</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QFrame" name="divider">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #F3A2BE;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::HLine</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="QLabel" name="label_26">
+        <property name="styleSheet">
+         <string notr="true">font-family:'Poppins';font-size:14px;font-weight:bold;background:transparent;color:#2c3e50;</string>
+        </property>
+        <property name="text">
+         <string>👥  Team Creator</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbl_tools_title">
+        <property name="styleSheet">
+         <string notr="true">font-size:12px;font-weight:bold;background:transparent;color:#2c3e50;</string>
+        </property>
+        <property name="text">
+         <string>🔧 Tech Stack :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="badge_python">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#F3A2BE;border-radius:8px;}QLabel{background:transparent;color:white;font-size:11px;font-weight:bold;padding:0 6px;}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <layout class="QHBoxLayout">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>🐍 Python</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="badge_pyside">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#F3A2BE;border-radius:8px;}QLabel{background:transparent;color:white;font-size:11px;font-weight:bold;padding:0 6px;}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <layout class="QHBoxLayout">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>🖼 PySide6</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="badge_selenium">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#F3A2BE;border-radius:8px;}QLabel{background:transparent;color:white;font-size:11px;font-weight:bold;padding:0 6px;}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <layout class="QHBoxLayout">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>🤖 Selenium</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="badge_vscode">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#F3A2BE;border-radius:8px;}QLabel{background:transparent;color:white;font-size:11px;font-weight:bold;padding:0 6px;}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <layout class="QHBoxLayout">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>💻 VS Code</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="row_dosen">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="card_dosen">
+        <property name="minimumSize">
+         <size>
+          <width>210</width>
+          <height>72</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>210</width>
+          <height>72</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#FCE4EC;border-radius:12px;border:2px solid #F3A2BE;}QLabel{background:transparent;}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <layout class="QHBoxLayout">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:24px;</string>
+           </property>
+           <property name="text">
+            <string>👨‍🏫</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">color:#c0527a;font-weight:bold;font-size:10px;</string>
+             </property>
+             <property name="text">
+              <string>DOSEN PENGAMPU</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">font-weight:bold;font-size:11px;color:#2c3e50;</string>
+             </property>
+             <property name="text">
+              <string>Beri Noviansyah, S.ST., M.T.</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="row_devs">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="card_dev1">
+        <property name="minimumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#FCE4EC;border-radius:12px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+        </property>
+        <layout class="QVBoxLayout">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;</string>
+           </property>
+           <property name="text">
+            <string>👨‍💻</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-weight:bold;font-size:10px;color:#2c3e50;</string>
+           </property>
+           <property name="text">
+            <string>M. Afzal Riyal Fauzi</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">color:#c0527a;font-size:10px;font-style:italic;</string>
+           </property>
+           <property name="text">
+            <string>251524021</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="card_dev2">
+        <property name="minimumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#FCE4EC;border-radius:12px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+        </property>
+        <layout class="QVBoxLayout">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;</string>
+           </property>
+           <property name="text">
+            <string>👩‍💻</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-weight:bold;font-size:10px;color:#2c3e50;</string>
+           </property>
+           <property name="text">
+            <string>Giza Jirndhara</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">color:#c0527a;font-size:10px;font-style:italic;</string>
+           </property>
+           <property name="text">
+            <string>251524010</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="card_dev3">
+        <property name="minimumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#FCE4EC;border-radius:12px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+        </property>
+        <layout class="QVBoxLayout">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;</string>
+           </property>
+           <property name="text">
+            <string>👨‍💻</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-weight:bold;font-size:10px;color:#2c3e50;</string>
+           </property>
+           <property name="text">
+            <string>Rajbi Muhammad Nizar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">color:#c0527a;font-size:10px;font-style:italic;</string>
+           </property>
+           <property name="text">
+            <string>251524027</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="card_dev4">
+        <property name="minimumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#FCE4EC;border-radius:12px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+        </property>
+        <layout class="QVBoxLayout">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;</string>
+           </property>
+           <property name="text">
+            <string>👨‍💻</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-weight:bold;font-size:10px;color:#2c3e50;</string>
+           </property>
+           <property name="text">
+            <string>Iman Satrio Wicaksono</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">color:#c0527a;font-size:10px;font-style:italic;</string>
+           </property>
+           <property name="text">
+            <string>251524013</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="card_dev5">
+        <property name="minimumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>148</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:#FCE4EC;border-radius:12px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+        </property>
+        <layout class="QVBoxLayout">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:20px;</string>
+           </property>
+           <property name="text">
+            <string>👩‍💻</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-weight:bold;font-size:10px;color:#2c3e50;</string>
+           </property>
+           <property name="text">
+            <string>Rizni Febrianty Surya P</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">color:#c0527a;font-size:10px;font-style:italic;</string>
+           </property>
+           <property name="text">
+            <string>251524029</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="row_info">
+      <property name="spacing">
+       <number>12</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="box_matkul">
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:white;border-radius:12px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <layout class="QVBoxLayout">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:12px;font-weight:bold;color:#F3A2BE;</string>
+           </property>
+           <property name="text">
+            <string>📚  Mata Kuliah</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:12px;color:#2c3e50;</string>
+           </property>
+           <property name="text">
+            <string>Pengembangan Perangkat Lunak Desktop</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:11px;color:#7f8c8d;</string>
+           </property>
+           <property name="text">
+            <string>Semester Genap  •  2024/2025</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:11px;color:#7f8c8d;</string>
+           </property>
+           <property name="text">
+            <string>Program Studi Teknik Informatika</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="box_stats">
+        <property name="styleSheet">
+         <string notr="true">QFrame{background-color:white;border-radius:12px;border:1px solid #F3A2BE;}QLabel{background:transparent;}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <layout class="QVBoxLayout">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:12px;font-weight:bold;color:#F3A2BE;</string>
+           </property>
+           <property name="text">
+            <string>📈  Project Stats</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout">
+           <property name="spacing">
+            <number>15</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:20px;font-weight:bold;color:#F3A2BE;</string>
+               </property>
+               <property name="text">
+                <string>5</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:10px;color:#7f8c8d;</string>
+               </property>
+               <property name="text">
+                <string>Developer</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:20px;font-weight:bold;color:#F3A2BE;</string>
+               </property>
+               <property name="text">
+                <string>3</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:10px;color:#7f8c8d;</string>
+               </property>
+               <property name="text">
+                <string>Halaman</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:20px;font-weight:bold;color:#F3A2BE;</string>
+               </property>
+               <property name="text">
+                <string>4</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:10px;color:#7f8c8d;</string>
+               </property>
+               <property name="text">
+                <string>Tech Stack</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:20px;font-weight:bold;color:#F3A2BE;</string>
+               </property>
+               <property name="text">
+                <string>∞</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font-size:10px;color:#7f8c8d;</string>
+               </property>
+               <property name="text">
+                <string>Semangat</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="box_quote">
+        <property name="styleSheet">
+         <string notr="true">QFrame{background:qlineargradient(x1:0,y1:0,x2:1,y2:1,stop:0 #F3A2BE,stop:1 #f7c5d5);border-radius:12px;}QLabel{background:transparent;}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <layout class="QVBoxLayout">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:24px;</string>
+           </property>
+           <property name="text">
+            <string>💬</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_quote">
+           <property name="styleSheet">
+            <string notr="true">font-size:12px;font-style:italic;color:white;font-weight:500;</string>
+           </property>
+           <property name="text">
+            <string>Ubah lelah menjadi lillah, InsyaAllah berkah.</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-size:11px;color:white;font-weight:bold;</string>
+           </property>
+           <property name="text">
+            <string>— A3 Team</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
