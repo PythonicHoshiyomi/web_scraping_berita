@@ -13,8 +13,13 @@ def load_ui(filename):
 
 class PageAbout:
     def __init__(self):
-        self.ui = load_ui('ui_About.ui')
-        self.page = self.ui.centralWidget()
+        self.ui   = load_ui('page_about.ui')
+        central   = self.ui.centralWidget()
+        from PySide6.QtWidgets import QFrame
+        sidebar = central.findChild(QFrame, 'Sidebar')
+        if sidebar:
+            sidebar.hide()
+        self.page = central
 
     def get_page(self):
         return self.page
