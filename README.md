@@ -1,6 +1,7 @@
 # Scraper Berita
 Kelompok A3:
 - PythonicHoshiyomi: Giza Jirndhara (251524010)
+- bijieu: Rizni Febrianty Surya Putri (251524029)
 
 ## First Setup 
 ```
