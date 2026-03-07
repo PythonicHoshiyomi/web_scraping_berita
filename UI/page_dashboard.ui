@@ -553,7 +553,7 @@ QLabel { border: none; background: transparent; }</string>
 	margin-left: 12px;</string>
                </property>
                <property name="text">
-                <string>1,284</string>
+                <string>-</string>
                </property>
               </widget>
              </item>
@@ -634,7 +634,7 @@ QLabel { border: none; background: transparent; }</string>
                 <string notr="true">QLabel { color: #2c3e50; font-size: 18px; font-weight: 700; font-family: &quot;Poppins&quot;,&quot;Segoe UI Bold&quot;; }</string>
                </property>
                <property name="text">
-                <string>Kompas.com</string>
+                <string>-</string>
                </property>
               </widget>
              </item>
@@ -644,7 +644,7 @@ QLabel { border: none; background: transparent; }</string>
                 <string notr="true">QLabel { color: #95a5a6; font-size: 11px; }</string>
                </property>
                <property name="text">
-                <string>3 menit yang lalu</string>
+                <string>-</string>
                </property>
               </widget>
              </item>
@@ -716,7 +716,7 @@ QLabel { border: none; background: transparent; }</string>
                 <string notr="true">QLabel { color: #2c3e50; font-size: 22px; font-weight: 700; font-family: &quot;Poppins&quot;,&quot;Segoe UI Black&quot;; }</string>
                </property>
                <property name="text">
-                <string>10:42 AM</string>
+                <string>-</string>
                </property>
               </widget>
              </item>

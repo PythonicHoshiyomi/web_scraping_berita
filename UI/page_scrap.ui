@@ -766,7 +766,12 @@ QScrollBar::handle:vertical:hover { background: #5fa8a0; }</string>
           </column>
           <column>
            <property name="text">
-            <string>Website</string>
+            <string>URL</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Konten</string>
            </property>
           </column>
          </widget>
