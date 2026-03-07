@@ -10,5 +10,5 @@ python3 -m venv .venv
 pip install requirements.txt
 .venv/Scripts/activate # Windows
 source .venv/bin/activate # Linux/Mac
-pip install requirements.txt
+pip install -r requirements.txt
 ```
