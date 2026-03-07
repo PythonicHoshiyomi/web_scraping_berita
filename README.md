@@ -12,3 +12,16 @@ pip install requirements.txt
 source .venv/bin/activate # Linux/Mac
 pip install -r requirements.txt
 ```
+## Preview
+
+<p><img src="assets/dashboard.png"></p>
+<p><img src="assets/scrape_page.png"></p>
+<p><img src="assets/about.png"></p>
+
+## Panduan
+1. Pergi ke tab Scrape untuk memulai scraping
+2. Masukan URL yang anda ingin scrape
+3. Tekan start untuk memulai
+4. Tunggu sampai progress bar selesai
+5. Hasil scraping dapat di-export menggunakan tombol export yang ada di sebelah tombol start
+6. Anda dapat melihat riwayat aktivitas di tab Dashboard
