@@ -2,6 +2,7 @@
 Kelompok A3:
 - PythonicHoshiyomi: Giza Jirndhara (251524010)
 - Verianoo : Rajbi Muhammad Nizar (251524027)
+- Imanstr26 : Iman Satrio Wicaksono (251524013)
 
 ## First Setup 
 ```
